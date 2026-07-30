@@ -1,10 +1,11 @@
 package com.finance.frauddetection.model;
 
 public class Customer {
-    int id;
-    String name;
-    String accountNumber;
-    String registeredCountry;
+
+    private int id;
+    private String name;
+    private String accountNumber;
+    private String registeredCountry;
 
     public Customer(int id, String name, String accountNumber, String registeredCountry) {
         this.id = id;
@@ -13,7 +14,19 @@ public class Customer {
         this.registeredCountry = registeredCountry;
     }
 
-    void getDetails(){}
-    void setDetails(){}
+    public int getId() {
+        return id;
+    }
 
+    public String getRegisteredCountry() {
+        return registeredCountry;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
 }
