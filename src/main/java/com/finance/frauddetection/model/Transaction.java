@@ -15,6 +15,39 @@ public class Transaction {
     private LocalDateTime txnTimestamp;
     private String status;
 
+    package com.finance.frauddetection.model;
+
+public class Customer {
+
+    private int id;
+    private String name;
+    private String accountNumber;
+    private String registeredCountry;
+
+    public Customer(int id, String name, String accountNumber, String registeredCountry) {
+        this.id = id;
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.registeredCountry = registeredCountry;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getRegisteredCountry() {
+        return registeredCountry;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+}
+
     // Constructor
     public Transaction(int id, int customerId, String txnCountry, BigDecimal amount,
                        LocalDateTime txnTimestamp, String status) {
