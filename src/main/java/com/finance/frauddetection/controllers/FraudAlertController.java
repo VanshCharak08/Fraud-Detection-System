@@ -16,7 +16,7 @@ public class FraudAlertController {
     public String getOpenAlerts(){
         return "OPen Alerts";
     }
-    @PutMapping("/{id}/Status")b
+    @PutMapping("/{id}/Status")
     public String updateStatus(@PathVariable("id") int id){
         return "Status Updation";
     }
