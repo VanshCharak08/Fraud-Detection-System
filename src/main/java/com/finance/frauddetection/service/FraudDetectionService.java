@@ -73,9 +73,6 @@ public class FraudDetectionService {
             riskScore += 30;
         }
 
-        // Attach fraud analysis results to transaction
-        transaction.setRiskScore(riskScore);
-        transaction.setFraudReasons(reasons);
 
         return transaction;
     }
